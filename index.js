@@ -1,28 +1,25 @@
-// Import Article
-import Article from './Article.js';
-import Component from ‘./Component.ha’
+import Sidebar from './components/Sidebar.js';
 
-// Pass the values to the constructor method of Article
-const a = new Article (
-  {
-    title: "This is the title!",
-    author: "Me",
-    text: "This is an example article!"
-  }
-);
+const s = new Sidebar({
+  menu: [
+    'Albert Eggstein',
+    'Attila the Hen',
+    'Attila the Hen',
+    'Dixie Chick',
+    'Gregory Peck',
+    'Mary Poopins'
+  ]
+});
 
-// Shows its HTML on the console
-console.log(a.render() );
+const renderedHtml = s.render()
 
-class ArticleTitle extends Component {
+/*
+  TODO: Use the render() method of Sidebar to show HTML response on console. Results should be wrapped in <ul></ul>
 
-  constructor(title) {
-    this.props = {};
-    this.props.title = title;
-  }
+  The final result should look like the following:
+  <ul><li>Albert Eggstein</li><li>Attila the Hen</li><li>Attila the Hen</li><li>Dixie Chick</li><li>Gregory Peck</li><li>Mary Poopins</li></ul>
+*/
+console.log(renderedHtml);
 
-  render() {
-    return (<h1>${this.props.title}</h1>);
-  }
-
-}
+//<li>${props.name}</li>
+//"<li>"+props.name+"</li>"
