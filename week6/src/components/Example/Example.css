@@ -1,0 +1,12 @@
+.my-p
+{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+}
